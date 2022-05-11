@@ -1,0 +1,376 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo',
+        sans-serif;
+}
+header{
+background-image: linear-gradient(rgba(0,0,0,50%),rgba(0,0,0,50%)) , url(10.jpg);
+background-size: cover;
+background-position: center;
+height: 100vh;
+min-height: 100px;
+width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #F4D03F;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1px 1%;
+    background-color: aliceblue ;
+}
+
+nav .logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #F4D03F;
+    padding: 0 80px;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 80px;
+}
+
+nav ul li a{
+    color: black;
+    font-size:18px;
+    text-decoration: none;
+    margin-right: 25px;
+
+}
+
+nav ul li a:hover{
+    color:#F4D03F ;
+}
+.cottage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 930px;
+    height: 520px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+    background-image: linear-gradient(rgba(0,0,0,30%),rgba(0,0,0,30%)), url(10\ -\ Copy.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cottage h1{
+    text-align: center;
+    color: white;
+    margin-top: 140px;
+    font-size: 100px;
+    font-weight: 100;
+    font-family: Brush Script MT;
+}
+
+.cottage p{
+    text-align: center;
+    color: white ;
+    margin-top: 40px; 
+    font-size: 25px;
+    font-family: 'Cairo',
+        sans-serif;
+}
+
+
+.title {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 50px;
+    color: black;
+}
+
+ .cities{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+}
+
+.card{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    margin: 40px;
+    margin-top: -50px;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(255, 255, 255);
+    background: rgba(0,0,0,.4);
+    text-align: center;
+    font-size: 30px;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    display: flex;
+    color: #f3f3f3;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+ .card .back h3{
+     font-size: 30px;
+     margin-top: 20px;
+     letter-spacing: 2px;
+ }
+
+ .card .back p{
+     letter-spacing: 1px;
+     font-size: 20px;
+     position: absolute;
+     top: 120px;
+     line-height: 35px;
+     margin-left: 30px;
+     width: 75%;
+    
+ }
+
+ .card:hover .front{
+     transform: perspective(600px) rotateY(180deg);
+ }
+
+ .card:hover .back{
+     transform: perspective(600px) rotateY(360deg);
+ }
+
+  .imges{
+     font-family: 'Cairo',
+        sans-serif;
+     overflow-x: hidden;
+     min-height: 100vh;
+     background: rgb(255, 255, 255);
+ }
+ 
+  
+ .cottage1{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 20vh;
+
+ }
+
+ .cottage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+
+}
+
+.cottage3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin-top: -110px;
+
+
+}
+
+ .cards{
+    
+     width: 800px;
+     height: 350px;
+     display: flex;
+     overflow: hidden;
+     background: white;
+     box-shadow: 0 5px 10px #033f49;
+    border-radius: 10px;
+ }
+
+ .cards:hover{
+     transform: scale(1.02);
+     box-shadow: 0 5px 20px #033f49;
+ }
+
+ .cottage1 .cards .img-card{
+     background-image: url(cottage1.jpg);
+     width: 40%;
+     height: 100%;
+     background-size: cover;
+ }
+
+ .cottage2 .cards .img-card{
+    background-image: url(cottage2.jpg);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+}
+
+.cottage3 .cards .img-card{
+    background-image: url(cottage3.jpg);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+ .cards .content{
+     width: 60%;
+     height: 100%;
+     display: grid;
+     grid-template-rows: 50px 150px 50px;
+     padding: 10px 15px;
+ }
+
+ .cards .content .head h1{
+     color: rgb(6, 21, 132);
+ }
+
+ .cards .content .text p{
+     color: rgba(0, 0, 0, .6);
+     font-size: 15px;
+ }
+
+ .cards .content  .i1 i {
+     font-size: 20px;
+     color: darkblue;
+     margin-top: 20px;
+ }
+
+ .cards .content .i2 i{
+     font-size: 30px;
+     color: #F4D03F;
+     margin-top: 22px;
+ }
+
+ .cards .content samp{
+     font-size: 15px;
+     font-weight: bold;
+     color: darkblue ;
+     margin-top: 25px;
+
+ }
+
+ .cards .content a{
+     color: #000;
+     font-size: 20px;
+     font-weight: bold;
+     text-decoration:none ;
+ }
+
+ .cards .content .btn-cont input{
+     background-color: rgb(6, 21, 132);
+     padding: 5px 10px;
+     color: #fff;
+     border-radius: 10px;
+     outline: none;
+     border: none;
+     margin-top: 90px;
+     margin-left: 350px;
+     cursor: pointer;
+ }
+ .cards .content .btn-cont input:hover{
+     background-color:rgb(21, 41, 197); 
+ }
+
+ .footer-basic {
+    padding:40px 0;
+    background-color: gray;
+    color:#041628;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+
+
+

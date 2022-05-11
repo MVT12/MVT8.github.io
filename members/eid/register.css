@@ -1,0 +1,64 @@
+html{
+    background-image: url(images/bed-ge211e19ab_1920.jpg);
+}
+#form{
+    position: relative;
+    left: 180px;
+    display: flex;
+    background-color: rgb(242, 241, 245);
+    width: 700px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 50px;
+    margin: 150px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.name{
+    display: flex;
+}
+#fn,#ln{
+    border: 1px solid rgb(0, 0, 0);
+    width: 33%;
+    padding: 12px 20px ;
+    margin: 8px;
+    border-radius: 8px;
+}
+#em,#num{
+    border: 1px solid rgb(0, 0, 0);
+    width: 80%;
+    padding: 12px 20px ;
+    margin: 8px;
+    border-radius: 8px;
+}
+#pass{
+    border: 1px solid rgb(0, 0, 0);
+    width: 80%;
+    padding: 12px 20px ;
+    margin: 8px;
+    border-radius: 8px;
+}
+#ccn{
+    border: 1px solid rgb(0, 0, 0);
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+}
+#bt{
+    border: 1px solid rgb(0, 0, 0);
+    width: 37%;
+    padding: 12px 20px ;
+    margin: 8px;
+    border-radius: 8px;
+}
+#sub{
+    padding: 14px 20px;
+    border-radius: 8px;
+    align-content: center;
+}
+#submit{
+    text-align: center;
+}
+ h1{
+    text-align: center;
+}

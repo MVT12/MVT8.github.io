@@ -1,0 +1,85 @@
+body
+{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ececec;
+}
+h1{
+  color: #B7950B;
+}
+
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    background-color: #fffF;
+    padding-top: 5px;
+    min-height: 10px;
+    border-bottom:#B7950B 5px solid;
+}
+header a
+{
+    color: #F4D03F;
+    text-emphasis: none;
+    font-size: 19px;
+}
+header li{
+    float:right;
+    padding: 10px;
+}
+#dodog
+{
+    min-height: 400px;
+    background: url("images/cabins/back.jpg");
+}
+#newsletter h1
+{
+float: right;
+}
+#newsletter form
+{
+    float: left;
+    margin-top:15px;
+}
+
+
+ 
+  .contact .info {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+  }
+  .contact .info .label {
+    font-size: 35px;
+    font-weight: 800;
+    color: #B7950B;
+    letter-spacing : -2px;
+    margin-bottom : 15px;
+  }
+  @media (max-width: 767px) {
+    .contact .info .label,
+    .contact .info .link {
+      font-size: 25px;
+    }
+  }
+  .footer {
+    background-color: var(--secondary-color);
+    color: rgb(167, 148, 148);
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .footer span {
+    font-weight: bold;
+    color: var(--main-color);
+  }
+  

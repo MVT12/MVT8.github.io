@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" type="image/png" href="../../images/2.png">
+<title>
+    Register
+</title></head>
+<body>
+    <div id="form">
+    <form>
+    <h1>
+    Register
+    </h1>
+    <label>Name:</label>
+    <div class="Name">
+        <input type="text" placeholder="First name" required minlength="4" maxlength="10" id="fn">
+        <input type="text" placeholder="Last name" required minlength="4" maxlength="10" id="ln">
+    </div>
+    <div class="input">
+        <label>contact info:</label>
+        <br>
+        <input type="email" placeholder="Email address" required id="em">
+        <input type="tel" placeholder="Phone number" required id="num">
+    </div>
+    <div id="credit">
+        <label>Credit card number:</label>
+        <br>
+        <input type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="xxxx-xxxx-xxxx-xxxx" id="ccn" required maxlength="19" >
+    </div>
+    <div>
+        <label>Password</label>
+        <br>
+        <input type="password" placeholder="password" minlength="6" maxlength="26" id="pass" required>
+    </div>
+    <div>
+        <label>Birth date:</label>
+        <br>
+        <input type="date" id="bt" required>
+    </div>
+    <label>Gender:</label>
+    <div>
+        <input type="radio" name="Gender" value="Male" id="male" checked>
+        <label for="male">Male</label>
+    </div>
+    <div>
+        <input type="radio" name="Gender" value="Female" id="female">
+        <label for="female">Female</label>
+    </div>
+    <div id="submit">
+        <input type="submit" id="sub">
+    </div>
+</form></div>
+</body>
+
+</html>

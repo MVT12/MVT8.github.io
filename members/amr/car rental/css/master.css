@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+font-family: 'Poppins', sans-serif;
+ margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-padding-top: 2rem;/*shit*/
+scroll-behavior: smooth;/*shit*/
+list-style: none;/*shit*/
+text-decoration: none;
+text-transform: capitalize;
+}
+
+:root{
+--main-color:#fe5b3d;
+--second-color:#ffac38;
+--text-color:#444;
+--gradient:linear-gradient(#fe5b3d,#ffac38,); /*shit*/
+}
+
+html::-webkit-scrollbar-track{
+background: transparent;
+}/*shit*/
+
+html::-webkit-scrollbar-thumb{
+    background:var(--main-color);
+    border-radius: 5rem;
+    }/*shit*/
+    
+.home{
+width: 100%;
+min-height: 100vh;
+position: relative;
+background-image: url(Car\ Website\ –\ 1@2x.png);
+background-repeat: no-repeat;
+background-position: center right;
+background-size: cover;
+display: grid;/*shit*/
+padding: 25PX;
+grid-template-columns: repeat(2,1fr);/*shit*/
+}
+
+.text h1{
+letter-spacing: 2px;
+    font-size: 3.5rem;
+}
+
+.text span{
+    color: var(--main-color);
+}
+
+.text p{
+margin: 00.5rem 0 1rem;
+}
+
+.form-container form{
+display: flex;
+/*flex-wrap: wrap;*/
+align-items: center;
+gap: 2rem;
+position: absolute;
+bottom: -17rem;
+left: 17rem;
+background: rgb(0, 0, 0);
+padding: 30px;
+border-radius: 0.5rem;
+color: #fff;
+}
+
+.input-box{
+ flex: 1 1 7rem;
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.input-box span{
+ font-weight: 500;
+ font-size: large;
+}
+
+.input-box input{
+ padding: 6px;
+ outline: none;
+ border: none;
+ background: #eeeff1;
+ border-radius: 00.5rem;
+ font-size: 16px;
+}
+
+.form-container form .btn{
+ float: 1 1 7rem;
+ padding: 10px 34px;
+ border: none;
+ border-radius: 0.5rem;
+ background: #474fa0;
+ color: #fff;
+ font-size: 1rem;
+ font-weight: 500;
+}
+
+.form-container form .btn:hover{
+ background: var(--main-color);
+}
+
+.footer{
+width:100%;
+height: 250px;
+background-color:#42320f;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-top: 400px;
+}
+
+.text-foo{
+  position: absolute;
+ font-size: 1.5rem;
+ top: 0px;
+ top: 15px;
+ color: rgb(214, 197, 197);
+}
+
+.icons{
+position: absolute;
+right: 0px;
+bottom: 0px;
+color:#fff;
+font-size: 20px;
+font-weight: bold;
+padding: 20px;
+}
+
+.copy-rights{
+color: #fff;
+font-size: 1rem;
+position: absolute;
+bottom: 0px;
+left: 0px;
+padding: 20px;
+}
+
+.mvt{
+position: absolute;
+left: 0px;
+top: 70px ;
+padding: 20px;
+}
+
+
+.link a {
+    float: 1 1 7rem;
+    padding: 10px 34px;
+    border: none;
+    border-radius: 0.5rem;
+    background:var(--main-color);
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500px;
+    position: relative;
+    top: 500px;
+    right: 500px;
+  }
+   
+   
+.link a:hover{
+    background:rgb(0, 153, 255);    
+    color: black;
+   }
+
+
+
+
+
+
+

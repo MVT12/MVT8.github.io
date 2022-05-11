@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: white;
+
+    width: 100%;
+    position: fixed;
+    /* بتخلي ال هيدر ثايت */
+    z-index: 999;
+    /* مبتخليش حاجه تغطي علي الهيدر وانا بسكرول*/
+    display: flex;
+    justify-content: space-between;
+    /* بيطبق المسافات بين العناصر اللي انا عاملها */
+    align-items: center;
+    /* علشان اخلي العناصر بتاعتي في النص عموديا */
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    /* بتخلي الحروف كابتل */
+    font-weight: 700;
+    /* بتكبر الخط */
+    font-size: 1.8em;
+}
+
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/airport-transfer-arrivals-pickup.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main h1 {
+    color: lavender;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: inherit;
+}
+
+.main h1 span {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: aqualicebluea;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    transition: 0.7s ease;
+    margin-bottom: 30px;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.7s ease;
+}
+
+
+.social-icons :hover {
+    transform: scale(1.1);
+}
+
+.Book-Now {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(images/Airport-taxi.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+.cotainer {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+
+}
+
+.cotainer .title {
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.cotainer form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+
+.user-details .input-box input {
+    display: block;
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+
+
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #3a6cf4;
+
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    background-color: #3a6cf4;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+
+}
+
+@media (max-width:584px) {
+    .cotainer {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin: 20px 0 12px 0;
+        width: 100%;
+    }
+
+    .cotainer form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+.footer {
+    background-color: #000016;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 2em;
+    font-weight: 600;
+
+}
+
+.footer-title span {
+    color: aqua;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .title {
+        font-size: 1.8em;
+
+    }
+
+    .section {
+        padding: 80px 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .cotainer {
+        max-width: 100%;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main content h3 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+
+    }
+
+    .main content h3 {
+        font-size: 1.4em;
+    }
+
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+
+    }
+}
